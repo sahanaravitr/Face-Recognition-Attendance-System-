@@ -1,0 +1,14 @@
+import cv2
+import os
+
+# Get the path to the Haar Cascade XML file that OpenCV uses by default
+cascade_path = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
+
+# Print the path to check if it's correct
+print("Path to Haar Cascade XML:", cascade_path)
+
+# Check if the file exists at the specified path
+if os.path.exists(cascade_path):
+    print("Haar Cascade file found at:", cascade_path)
+else:
+    print("Haar Cascade file NOT found!")
